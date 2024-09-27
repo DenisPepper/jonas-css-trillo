@@ -8,3 +8,6 @@ createRoot(document.getElementById('root')).render(
     <App />
   </StrictMode>
 );
+
+
+// svg free icons: https://icomoon.io/app 
