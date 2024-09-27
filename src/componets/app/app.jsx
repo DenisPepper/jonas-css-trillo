@@ -1,9 +1,10 @@
 import './app.scss';
+import { Header } from '../header/header';
 
 export function App() {
   return (
     <div className='container'>
-      <header className='header'>Header</header>
+      <Header />
       <div className='content'>
         <nav className='sidebar'>Sidebar</nav>
         <main className='hotel-view'>Content</main>
