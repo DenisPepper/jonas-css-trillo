@@ -6,8 +6,8 @@ const iconMagnifyingGlass = `${sprite}#icon-magnifying-glass`;
 export function HeaderSearchForm() {
   return (
     <form className='search' action='#'>
-      <input className='serachc' type='text' placeholder='Search hotels ...' />
-      <button className='search__button'>
+      <input className='search__input' type='text' placeholder='Search hotels ...' />
+      <button className='search__button' type='button'>
         <svg className='icon search__icon'>
           <use xlinkHref={iconMagnifyingGlass}></use>
         </svg>
