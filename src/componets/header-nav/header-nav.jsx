@@ -12,16 +12,17 @@ export function HeaderNav() {
         <svg className='icon'>
           <use xlinkHref={iconBookmark}></use>
         </svg>
-        <span className='count--bookmark'>7</span>
+        <span className='count count--bookmark'>7</span>
       </div>
       <div>
         <svg className='icon'>
           <use xlinkHref={iconChat}></use>
         </svg>
-        <span className='count--chat'>17</span>
+        <span className='count count--chat'>17</span>
       </div>
       <div className='user'>
         <img className='user__photo' src={userPhoto} alt='User photo.' />
+        <span>Jonas</span>
       </div>
     </nav>
   );
