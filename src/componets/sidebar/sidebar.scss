@@ -1,0 +1,17 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.legal {
+  padding: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  color: var(--color-grey-light-4);
+  margin-top: auto;
+}
+
+.nav-icon {
+  width: 1.75rem;
+  height: 1.75rem;
+}

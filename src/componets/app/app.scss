@@ -4,6 +4,8 @@
   margin: 8rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--box-shadow-default);
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -14,6 +16,7 @@
 
 .content {
   display: flex;
+  flex: 1 0 auto;
 }
 
 .sidebar {
