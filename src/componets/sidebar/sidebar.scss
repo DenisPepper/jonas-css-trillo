@@ -29,14 +29,18 @@
   transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
 }
 
-.side-nav__item:hover::before,
-.side-nav__item:focus-within::before {
+.side-nav__item:hover::before {
   transform: scaleY(1);
   width: 100%;
 }
 
-.side-nav__item:active::before {
+.side-nav__item:focus-within::before {
+  transform: scaleY(1);
+  width: 100%;
   background-color: var(--color-primary);
+}
+
+.side-nav__item:active::before {
 }
 
 /*
