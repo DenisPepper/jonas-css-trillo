@@ -1,4 +1,6 @@
 import './detail.scss';
+import user1 from '/src/assets/user-1.jpg';
+import user2 from '/src/assets/user-2.jpg';
 import user3 from '/src/assets/user-3.jpg';
 import user4 from '/src/assets/user-4.jpg';
 import user5 from '/src/assets/user-5.jpg';
@@ -36,7 +38,36 @@ export function Detail() {
           </div>
         </div>
       </div>
-      <div className='reviews'>User reviews</div>
+      <div className='reviews'>
+        <article className='review'>
+          <blockquote className='review__text'>
+            Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure
+            aliquid aliquam.
+          </blockquote>
+          <div className='review__user'>
+            <img className='review__photo' src={user1} alt='' />
+            <div className='review__user-box'>
+              <p className='review__user-name'>Nick Smith</p>
+              <p className='review__user-date'>Feb 3rd, 2017</p>
+            </div>
+            <div className='review__rating'>7.8</div>
+          </div>
+        </article>
+        <article className='review'>
+          <blockquote className='review__text'>
+            Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus, inventore iure
+            aliquid aliquam.
+          </blockquote>
+          <div className='review__user'>
+            <img className='review__photo' src={user2} alt='' />
+            <div className='review__user-box'>
+              <p className='review__user-name'>Nick Smith</p>
+              <p className='review__user-date'>Feb 3rd, 2017</p>
+            </div>
+            <div className='review__rating'>7.8</div>
+          </div>
+        </article>
+      </div>
     </div>
   );
 }

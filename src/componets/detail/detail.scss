@@ -2,6 +2,7 @@
   display: flex;
   padding: 4.5rem;
   background-color: var(--color-grey-light-1);
+  font-size: 1.4rem;
 }
 
 .description {
@@ -10,7 +11,6 @@
   background-color: white;
   box-shadow: var(--box-shadow-light);
   flex: 0 0 60%;
-  font-size: 1.4rem;
 }
 
 .paragraf {
@@ -50,11 +50,6 @@
   }
 }
 
-.reviews {
-  background-color: greenyellow;
-  flex-grow: 1;
-}
-
 .recommend {
   font-size: 1.3rem;
   color: var(--color-grey-dark-3);
@@ -83,5 +78,68 @@
     &:not(:last-child) {
       margin-right: -1.5rem;
     }
+  }
+}
+
+.reviews {
+  flex-grow: 1;
+}
+
+.review {
+  background-color: white;
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+  overflow: hidden;
+
+  &__text {
+    margin-bottom: 2rem;
+    z-index: 10;
+    position: relative;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+  }
+
+  &__user-box {
+    margin-right: auto;
+  }
+
+  &__user-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+  }
+
+  &__user-name {
+    font-size: 1 rem;
+    color: var(--color-grey-dark-3);
+  }
+
+  &__photo {
+    width: 4.5rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+  }
+
+  &__rating {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    font-weight: 300;
+  }
+
+  &::before {
+    content: '\201C';
+    display: block;
+    position: absolute;
+    top: -9.75rem;
+    left: -1rem;
+    font-size: 20rem;
+    color: var(--color-grey-light-2);
+    font-family: sans-serif;
+    z-index: 1;
   }
 }
