@@ -1,3 +1,5 @@
+@import '/src/main';
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,11 @@
   font-size: 1.4rem;
   list-style: none;
   margin-top: 3.5rem;
+
+  @media only screen and (max-width: $break-p-small) {
+    display: flex;
+    margin: 0;
+  }
 }
 
 .side-nav__item {
@@ -40,9 +47,6 @@
   background-color: var(--color-primary);
 }
 
-.side-nav__item:active::before {
-}
-
 /*
 .side-nav__item:focus-within::before {
   transform: scaleY(1);
@@ -72,4 +76,8 @@
   text-align: center;
   color: var(--color-grey-light-4);
   margin-top: auto;
+
+  @media only screen and (max-width: $break-p-small) {
+    display: none;
+  }
 }

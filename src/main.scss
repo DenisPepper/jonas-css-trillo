@@ -14,6 +14,10 @@
   --box-shadow-light: 0 2rem 6rem rgba(0, 0, 0, 0.06);
 }
 
+$break-p-large: 75rem; // 1200px
+$break-p-medium: 67.75rem; // 1100px
+$break-p-small: 56.25rem; // 900px
+
 *,
 *::before,
 *::after {
@@ -24,6 +28,10 @@
 
 html {
   font-size: 62.5%; // 1rem = 10px
+
+  @media only screen and (max-width: $break-p-large) {
+    font-size: 50%;
+  }
 }
 
 body {

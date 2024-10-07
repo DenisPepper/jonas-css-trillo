@@ -13,9 +13,6 @@
   flex: 0 0 60%;
 }
 
-.paragraf {
-}
-
 .paragraf:not(:last-of-type) {
   margin-bottom: 2rem;
 }
@@ -76,7 +73,7 @@
     box-sizing: content-box;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
